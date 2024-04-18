@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarea 03</title>
+    <link rel="stylesheet" href="./tarea03_files/detalles.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h4><left><i>Equipo 24 - Tarea 03</i></left></h4>
+            <h2><i><center>Registro de Pasajeros</center></i></h2>
+            <form action="https://guillerm0r.github.io/TareasGrupo18/3_Tarea/mostrar_registros.html" method="get" target="_blank">
+                <fieldset class="marco1">
+                    <legend style="color: blue"><b><i>1. DATOS DEL VUELO</i></b></legend>
+                    <label for="compania_aerea">Compania area:</label>
+                    <input size="30" type="text" name="Compania" placeholder="Indicar nombre de compania aerea.">
+                    <label for="numero_vuelo">Numero de vuelo:</label>
+                    <input size="20" type="text" name="Vuelo" placeholder="Indicar numero de vuelo.">
+                    <label for="procedencia">Procedencia:</label>
+                    <input size="30" type="text" name="Procedencia" placeholder="Indicar procedencia (ciudad, pais).">
+                    <br><br>
+                    <label for="destino">Destino:</label>
+                    <input type="text" size="30" name="Destino" placeholder="Indicar destino (ciudad, pais).">
+                    <label for="fecha_partida">Fecha partida(dd/mm/aa)</label>
+                    <input type="date" name="FechaNac">
+                    <label for="fecha_arribo">Fecha arribo(dd/mm/aa)</label>
+                    <input type="date" name="FechaNac">
+                    <p>Tipo de vuelo
+                        <input type="radio" name="Tipo de vuelo" value="comercial" checked="">comercial
+                        <input type="radio" name="Tipo de vuelo" value="cargo">cargo
+                    </p>
+                </fieldset><br>
+                <fieldset class="marco2">
+                    <legend style="color: red"><b><i>2. DATOS DEL PASAJERO</i></b></legend>											
+                    <label for="nombre">Nombre:</label>															
+                    <input size="30" type="text" name="Nombre" placeholder="Indicar nombres del pasajero.">			
+                    <label for="apellido">Apellido:</label>														
+                    <input size="30" type="text" name="Apellido" placeholder="Indicar apellidos del pasajero.">																					
+                    <label for="dni">Documento de identidad:</label>													
+                    <input size="20" type="text" name="DNI" placeholder="Indicar nro. de documento.">
+                    <br><br>
+                    <label for="FechaNac">Fecha Nac.(dd/mm/aa)</label>												
+                    <input type="date" name="FechaNac">	
+                    <label for="nacionalidad">Nacionalidad:</label>															
+                    <input type="text" size="25" name="Nacionalidad" placeholder="Indicar nacionalidad del pasajero.">
+					Género																			
+                        <input type="radio" name="genero" value="masculino" checked="">Masculino						
+                        <input type="radio" name="genero" value="femenino">Femenino	
+                    <label for="telefono">Telefono celular:</label>														
+                    <input type="tel" name="Telefono celular" placeholder="Indicar nro. de telefono.">							
+                    <br>																					
+                    <p><label for="pasaje">Codigo de pasaje:</label>											
+                    <input type="text" name="Codigo de Pasaje" placeholder="Indicar codigo de pasaje.">
+                    <label for="pasaje">Clase de pasaje (Primera clase/Clase Turista):</label>											
+                    <input type="text" name="Clase de Pasaje" placeholder="Indicar clase de pasaje."></p>				
+                </fieldset><br>
+                <fieldset class="marco3">
+                    <legend style="color: green"><b><i>3. DATOS DEL EQUIPAJE</i></b></legend>
+                    <p>Tipo de equipaje</p>
+                    <input type="checkbox" name="tipo_de_equipaje" value="Turista"> Turista
+                    <input type="checkbox" name="tipo_de_equipaje" value="Negocios"> Negocios
+                    <input type="checkbox" name="tipo_de_equipaje" value="Cientifico"> Cientifico
+                    <input type="checkbox" name="tipo_de_equipaje" value="Tecnico"> Tecnico
+                    <input type="checkbox" name="tipo_de_equipaje" value="Medico"> Medico
+                    <input type="checkbox" name="tipo_de_equipaje" value="Cultural"> Cultural
+                    <input type="checkbox" name="tipo_de_equipaje" value="Militar"> Militar
+                    <br><br>
+                    <label for="Volumen">Caracteristicas del volumen del equipaje:</label>
+                    <select id="volumen" name="volumen">
+                        <option value=""></option>
+                        <option value="liviano">Liviano</option>
+                        <option value="mediano">Mediano</option>
+                        <option value="pesado">Pesado</option>
+                    </select>
+                    <br><br>
+                    <label for="comentarios">Comentarios y/o consideraciones acerca del equipaje:<br></label> <textarea name="comentarios" rows="2" cols="101"></textarea>
+                    <br><br>
+                </fieldset><br>
+                <input type="submit" value="Enviar">
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+    </main>
+    <footer><center><b><i><span>SoftForm SRL</span></i></b></center></footer>
+</body></html>

@@ -1,0 +1,27 @@
+.marco1{
+    border: rgb(2, 2, 251) solid;
+}
+.marco2{
+    border: solid rgb(252, 3, 3);
+}
+.marco3{
+    border: solid rgb(15, 128, 2);
+}
+span{
+    color: orangered;
+}
+p{
+    background-color: rgba(242, 255, 129, 0.822);
+}
+.color{
+    color: rgb(10, 10, 10);
+}
+.color1{
+    color: rgb(20, 3, 249);
+}
+.color2{
+    color: rgb(251, 4, 13);
+}
+.color3{
+    color: rgb(2, 157, 10);
+}
