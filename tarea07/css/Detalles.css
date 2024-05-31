@@ -21,9 +21,16 @@ footer{
     margin-right: 10px;
     margin-left: 10px
 }
+.img2{
+    width: 100% /*150px*/;
+    height: 80px;
+    border: #1A1D29 outset 2px;
+    margin-right: 10px;
+    margin-left: 10px
+}
 .contenedor{
     display: flex;
-    justify-content:center ;
+    justify-content:left ;
     font-family: Disney, Verdana, Tahoma, sans-serif;
     color: white;
 }
@@ -34,4 +41,8 @@ footer{
 p{
     color: #f5f6f8;
     font-family: Disney, Verdana, Tahoma, sans-serif;
+}
+section ul li a
+{
+	color: yellow
 }
