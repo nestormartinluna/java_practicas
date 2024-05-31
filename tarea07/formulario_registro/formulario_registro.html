@@ -11,7 +11,7 @@
     <main>
         <section>
             <h3><left>Registro de Usuarios</left></h3>
-			<form action="mostrar_registros.html" method="get" target="_blank">
+			<form action="" onsubmit="return showFormData();">
                 <fieldset class="marco1">
                     <legend style="color: rgb(2, 122, 152)"><b><i>1. DATOS DEL USUARIO</i></b></legend>											
                     <label for="nombre">Nombre:</label>															
@@ -51,4 +51,16 @@
         </section>
     </main>
     <footer><center><b><i><span>SoftForm SRL</span></i></b></center></footer>
+	<script>
+		function showFormData(){
+			const nombre=document.getElementsByName("Nombre")[0].value
+			const apellido=document.getElementsByName("Apellido")[0].value
+			const dni=document.getElementsByName("DNI")[0].value
+			const fechanac=document.getElementsByName("FechaNac")[0].value
+			const nacionalidad=document.getElementsByName("Nacionalidad")[0].value			
+			alert(`Datos de Usuario a enviar.\n -Nombre: ${nombre}\n -Apellido: ${apellido}\n -DNI: ${dni}\n -Fecha Nacimiento: ${fechanac}\n -Nacionalidad: ${nacionalidad}\n`)
+			window.location.replace("../index.html")
+			return false
+		}
+	</script>
 </body></html>
